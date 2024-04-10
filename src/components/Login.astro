@@ -1,7 +1,7 @@
-	<form class="form" action="./menu">
+   <form class="form" action="./menu" method="POST">
 		<label>
-		  Cedula:
-		  <input type="text" name="cedula" required/>
+		  Correo Electrónico:
+		  <input type="email" name="email" required/>
 		</label>
 		<br>
 		<label>
@@ -12,9 +12,10 @@
 		<button>Enviar</button>
 	  </form>
 
+
+
 <style>
-.form  {
-    width: 15%;
+.form {
     text-decoration: none;
     line-height: 1.4;
     padding: calc(1.5rem - 1px);
@@ -25,8 +26,15 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-	background: linear-gradient(rgba(var(--accent-dark2), 66%), rgba(var(--accent-dark2), 33%));
-	border: 1px solid rgba(var(--accent-light2), 25%);
+    background: linear-gradient(rgba(var(--accent-dark2), 66%), rgba(var(--accent-dark2), 33%));
+    border: 1px solid rgba(var(--accent-light2), 25%);
+}
+
+/* Estilos específicos para pantallas más grandes (computadoras) */
+@media (min-width: 768px) {
+    .form {
+        width: 15%;
+    }
 }
 
 

@@ -35,23 +35,54 @@ import Navbar from '../components/Navbar.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<p class="alert">
-			<strong>Menú <span class="text-gradient">AsignU</span><br />
-		</p>
-        <ul role="list" class="link-card-grid">
-			<Card
-				href="#"
-				title="Material/Aula Asignada"
 
-			/>
-			<Card
-				href="./horario"
-				title="Horario"
-			/>
-			<Card
-				href="#"
-				title="Cursos Impartidos"
-			/>
+		<br><br><br><br><br><br>
+		<table>
+			<tr>
+				<td>Dia</td>
+				<td>Curso</td>
+				<td>Aula Asignada</td>
+				<td>Segmento Horario</td>
+			  </tr>			
+			<tr>
+			  <td>Lunes</td>
+			  <th>ITI-1234</th>
+			  <th>Aula #308</th>
+			  <th>8:00 - 11:59</th>
+			</tr>
+			<tr>
+				<td>Martes</td>
+				<th>ISW-4292</th>
+				<th>Aula #312</th>
+				<th>13:00 - 16:59</th>
+			</tr>
+			<tr>
+				<td>Miercoles</td>
+				<th>ITI-312</th>
+				<th>Aula #204</th>
+				<th>8:00 - 11:59</th>
+			</tr>
+			<tr>
+				<td>Jueves</td>
+				<th>ITI-242</th>
+				<th>Aula #318</th>
+				<th>8:00 - 11:59</th>
+			</tr>
+			<tr>
+				<td>Viernes</td>
+				<th>---</th>
+				<th>---</th>
+				<th>---</th>
+			</tr>
+			<tr>
+				<td>Sabado</td>
+				<th>---</th>
+				<th>---</th>
+				<th>---</th>
+			</tr>
+		  </table> 
+        <ul role="list" class="link-card-grid">
+			
 		</ul>
 	</main>
 </Layout>
@@ -119,4 +150,17 @@ import Navbar from '../components/Navbar.astro';
 		top: 200px;
 
 	}
+
+	tr{
+		position: relative;
+		top: 20px;
+		left:150px;
+		text-align: center;
+		border-radius: 8px;
+	}
+	tr:hover {		
+		background: rgba(var(--accent-light), 12%);
+
+	}
+
 </style>
