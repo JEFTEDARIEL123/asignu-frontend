@@ -1,0 +1,36 @@
+---
+import {
+Astronav,
+MenuItems,
+MenuIcon,
+Dropdown,
+DropdownItems,
+DropdownSubmenu,
+} from "astro-navbar";
+---
+<header class="lg:flex justify-between p-5 gap-5 mx-auto container">
+   <Astronav>
+      <div class="flex w-full lg:w-auto justify-between">
+
+         <div class="block lg:hidden">
+            <MenuIcon class="w-4 h-4 text-gray-800" />
+         </div>
+      </div>
+      <MenuItems class="hidden lg:flex">
+         <ul class="flex flex-col lg:flex-row lg:gap-5">
+
+            <button class="button">Marcar Entrada/Salida</button>
+            <br>
+            <button class="button">Recoger/Devolver Materiales</button>
+
+         </ul>
+      </MenuItems>
+   </Astronav>
+</header>
+
+<style>
+    	.button {
+		background-color: #435f9f;
+		border-radius: 7px;
+}
+</style>
