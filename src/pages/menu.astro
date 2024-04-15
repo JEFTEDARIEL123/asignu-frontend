@@ -1,14 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Login from '../components/Login.astro';
-import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="Asign-U">
 	
 	<main>
-		<Navbar/>
 		<svg
 			class="astro-a"
 			width="270"
@@ -36,9 +33,17 @@ import Navbar from '../components/Navbar.astro';
 			</defs>
 		</svg>
 		<p class="alert">
-			<strong>Menú <span class="text-gradient">AsignU</span><br />
+			<strong>Menú <span class="text-gradient">AsignU</span> <br />
 		</p>
         <ul role="list" class="link-card-grid">
+			<Card
+				href="#"
+				title="Marcar Entrada/Salida"
+			/>
+			<Card
+				href="#"
+				title="Recoger/Devolver Materiales"
+			/>
 			<Card
 				href="#"
 				title="Material/Aula Asignada"
@@ -47,10 +52,6 @@ import Navbar from '../components/Navbar.astro';
 			<Card
 				href="./horario"
 				title="Horario"
-			/>
-			<Card
-				href="#"
-				title="Cursos Impartidos"
 			/>
 		</ul>
 	</main>

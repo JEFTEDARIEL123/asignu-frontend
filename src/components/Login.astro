@@ -1,7 +1,22 @@
-   <form class="form" action="./menu" method="POST">
+---
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const cedula = data.get("cedula");
+    
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+---
+
+
+<form class="form" action="/login/${cedula}" method="POST">
 		<label>
-		  Correo Electrónico:
-		  <input type="email" name="email" required/>
+		  Cédula:
+		  <input type="text" name="cedula" required/>
 		</label>
 		<br>
 		<label>
