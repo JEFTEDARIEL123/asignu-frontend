@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Login from '../components/Login.astro';
+import FeedbackForm from "../components/loginForm"
 ---
 
 <Layout title="Asign-U">
@@ -35,7 +35,7 @@ import Login from '../components/Login.astro';
 			<strong>Bienvenido a <span class="text-gradient">AsignU</span><br />
 			Sitio web aún en desarrollo.</strong>
 		</p>
-		<Login/>
+		<FeedbackForm client:load />
 	</main>
 </Layout>
 
